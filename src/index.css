@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 20px 0;
+  text-shadow: 2px 4px 4px #0075ce;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content_hr {
+  height: 1px;
+  background-color: #0075ce;
+  border: none;
+}
