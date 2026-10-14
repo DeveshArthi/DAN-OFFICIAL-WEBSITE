@@ -9,6 +9,11 @@ import LightBannerImage from '../assets/ref/ter (2).png';
 const Banner = ({ theme }) => {
   return (
     <div className='banner_bg'>
+      <div className='banner_pattern'>
+        <div className='anime_ball1'></div>
+        <div className='anime_ball2'></div>
+        <div className='anime_ball3'></div>
+      </div>
       <div className='container banner_wrapper'>
 
         <div className="banner_content">

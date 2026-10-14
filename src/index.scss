@@ -262,12 +262,128 @@ body {
 // banner
 .banner_bg {
     // background-color: #000;
+    background: #40aac7;
+    background: linear-gradient(300deg, #0075ce 0.1%, rgba(51, 245, 132, 0) 9%);
     color: var(--text);
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 100px; // to avoid overlap with fixed navbar
+    position: relative;
 
+    .banner_pattern {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+
+        .anime_ball1,
+        .anime_ball2,
+        .anime_ball3 {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(359deg,
+                    #0075ce 40%,
+                    rgba(60, 59, 59, 0.447) 60%);
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            will-change: transform;
+        }
+
+        .anime_ball1 {
+            height: 20px;
+            width: 20px;
+            top: 25%;
+            left: 15%;
+            animation-name: floatBall1;
+            animation-duration: 13s;
+            animation-delay: -4s;
+        }
+
+        .anime_ball2 {
+            height: 30px;
+            width: 30px;
+            top: 50%;
+            left: 50%;
+            animation-name: floatBall2;
+            animation-duration: 17s;
+            animation-delay: -9s;
+        }
+
+        .anime_ball3 {
+            height: 40px;
+            width: 40px;
+            top: 80%;
+            left: 80%;
+            animation-name: floatBall3;
+            animation-duration: 21s;
+            animation-delay: -6s;
+        }
+    }
+
+    @keyframes floatBall1 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(8vw, -5vh) rotate(90deg);
+    }
+    50% {
+        transform: translate(3vw, 9vh) rotate(180deg);
+    }
+    75% {
+        transform: translate(-5vw, 4vh) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@keyframes floatBall2 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-10vw, 6vh) rotate(-90deg);
+    }
+    50% {
+        transform: translate(6vw, -8vh) rotate(-180deg);
+    }
+    75% {
+        transform: translate(10vw, 3vh) rotate(-270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(-360deg);
+    }
+}
+
+@keyframes floatBall3 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-7vw, -6vh) rotate(120deg);
+    }
+    50% {
+        transform: translate(-12vw, 10vh) rotate(240deg);
+    }
+    75% {
+        transform: translate(2vw, 5vh) rotate(300deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .banner_pattern {
+        .anime_ball1,
+        .anime_ball2,
+        .anime_ball3 {
+            animation: none;
+        }
+    }
+}
     .container {
         max-width: 90%;
         margin: auto;
@@ -447,6 +563,9 @@ body {
 
     // Responsive tweaks
     @media (max-width: 768px) {
+
+        
+
         .banner_wrapper {
             text-align: center;
             display: flex;
@@ -543,7 +662,7 @@ body {
 @media (max-width: 768px) {
     .content_wrapper {
         .container {
-              display: flex;
+            display: flex;
             flex-direction: column;
 
 
@@ -565,7 +684,7 @@ body {
         padding: 0 16px;
 
         .container {
-            
+
             display: flex;
             flex-direction: column;
 
@@ -610,7 +729,7 @@ body {
             text-align: center;
         }
 
-        h2 {
+        h3 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -624,7 +743,10 @@ body {
             margin-top: 3rem;
 
             .services_card {
-                background-color: var(--card-bg);
+                // background-color: var(--card-bg);
+                color: var(--text);
+                background: #40aac7;
+                background: linear-gradient(359deg, rgba(64, 170, 199, 1) 20%, rgba(51, 245, 132, 0) 70%);
                 padding: 1.5rem;
                 border-radius: 10px;
                 transition: transform 0.3s ease;
@@ -656,7 +778,7 @@ body {
                 .company {
                     font-size: 1rem;
                     font-weight: 500;
-                    color: #0075ce;
+                    // color: #0075ce
                 }
 
                 .duration {
@@ -676,19 +798,19 @@ body {
 
         .services_wrapper {
             .services_list {
-                 grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
 
-     @media (max-width: 908px) {
+    @media (max-width: 908px) {
         .container {
             max-width: 90% !important;
         }
 
         .services_wrapper {
             .services_list {
-                 grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
@@ -724,7 +846,7 @@ body {
         flex-direction: column;
         align-items: center;
 
-        > p {
+        >p {
             width: 70%;
             font-size: 1rem;
             font-weight: 700;
@@ -732,7 +854,7 @@ body {
             text-align: center;
         }
 
-        > h2 {
+        >h2 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -798,17 +920,17 @@ body {
     // }
 
     .creation_viewport {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px 0 20px;
-}
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0 20px;
+    }
 
-.creation_list {
-    display: flex;
-    gap: 24px;
-    width: 100%;
-    will-change: transform;
-}
+    .creation_list {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        will-change: transform;
+    }
 
     .creation_card {
         // Three visible cards on desktop.
@@ -817,7 +939,9 @@ body {
         box-sizing: border-box;
         scroll-snap-align: start;
 
-        background-color: var(--card-bg);
+        // background-color: var(--card-bg);
+        background: #40aac7;
+        background: linear-gradient(359deg, rgba(64, 170, 199, 1) 20%, rgba(51, 245, 132, 0) 70%);
         padding: 1.5rem;
         border-radius: 10px;
         display: flex;
@@ -878,11 +1002,11 @@ body {
         }
 
         .creation_wrapper {
-            > p {
+            >p {
                 width: 100%;
             }
 
-            > h2 {
+            >h2 {
                 font-size: 1.6rem;
             }
         }
@@ -898,6 +1022,7 @@ body {
     }
 
     @media (prefers-reduced-motion: reduce) {
+
         .creation_card,
         .carousel_controls button {
             transition: none;
@@ -949,7 +1074,9 @@ body {
             margin-top: 3rem;
 
             .keys_card {
-                background-color: var(--card-bg);
+                // background-color: var(--card-bg);
+                background: #40aac7;
+                background: linear-gradient(359deg, rgba(64, 170, 199, 1) 20%, rgba(51, 245, 132, 0) 70%);
                 padding: 1.5rem;
                 border-radius: 100px;
                 transition: transform 0.3s ease;
@@ -1002,7 +1129,8 @@ body {
         .keys_wrapper {
             .keys_list {
                 grid-template-columns: repeat(2, 1fr);
-                .keys_card{
+
+                .keys_card {
                     border-radius: 10px;
                 }
             }
@@ -1289,23 +1417,24 @@ body {
         display: flex;
         flex-direction: column;
         gap: 12px;
-         button:disabled {
-        opacity: 0.6;
-        cursor: wait;
-    }
 
-    .form_feedback {
-        margin-top: 16px;
-        line-height: 1.6;
-
-        &.success {
-            color: #15803d;
+        button:disabled {
+            opacity: 0.6;
+            cursor: wait;
         }
 
-        &.error {
-            color: #dc2626;
+        .form_feedback {
+            margin-top: 16px;
+            line-height: 1.6;
+
+            &.success {
+                color: #15803d;
+            }
+
+            &.error {
+                color: #dc2626;
+            }
         }
-    }
 
     }
 
