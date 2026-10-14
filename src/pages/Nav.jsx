@@ -21,7 +21,7 @@ const Nav = ({ theme, setTheme }) => {
       <div className="container">
         <nav>
           <Link to="/" className="nav_logo" onClick={closeMenu}>
-            <img src={theme === 'dark' ? DarkLogoImage : LightLogoImage} alt='DAN CONSULTANCY SERVICES' />
+            <img src={theme === 'dark' ? DarkLogoImage : LightLogoImage} alt='DAN IT CONSULTANCY SERVICES' />
           </Link>
           <div className='nav_actions'>
             <ul

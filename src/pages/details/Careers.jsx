@@ -10,7 +10,7 @@ export default function Careers() {
         <img src={careersImage} alt="Careers" />
 
         <div className="careers_content">
-          <h2> Build Your Future with DAN TECHWORKS</h2>
+          <h2> Build Your Future with DAN IT CONSULTANCY SERVICE</h2>
 
           <p>Turn your ideas, skills, and curiosity into meaningful digital work.<br />
 
@@ -36,7 +36,7 @@ export default function Careers() {
 
           <p>Send your résumé, portfolio or GitHub link, and a short introduction to:</p>
 
-          <strong>**OFFICIALDANTECH1518@GMAIL.COM**</strong>
+          <strong>**DANITCONSULTANCYSERVICE@GMAIL.COM**</strong>
 
           <p>Use the subject line: **Career Enquiry  Your Name  Area of Interest**</p>
 

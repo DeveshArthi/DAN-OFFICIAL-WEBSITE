@@ -14,7 +14,7 @@ const About = () => {
                 <div className='about_content'>
                     <div className='about_actions'>
                         <h2>Bringing Ideas to Life Through Design & Technology.</h2>
-                        <p>DAN cONSULTING SERVICE is my freelance web development and design venture. I combine creativity with technical expertise to deliver solutions that exceed expectations.</p>
+                        <p>DAN IT CONSULTANCY SERVICE is my freelance web development and design venture. I combine creativity with technical expertise to deliver solutions that exceed expectations.</p>
                         <a
                             href="https://drive.google.com/file/d/1Z9_BkPqZcsGszsvnXZrPoE0Sfac0B8az/preview"
                             className="talk_btn"

@@ -22,7 +22,7 @@ const Banner = ({theme}) => {
           <div className='banner_actions'>
             <a href="#contact" className="talk_btn">Start Your Project</a>
             <a
-              href="https://drive.google.com/file/d/1Z9_BkPqZcsGszsvnXZrPoE0Sfac0B8az/preview"
+              href="#"
               className="talk_btn"
               target="_blank"
               rel="noreferrer"
@@ -37,19 +37,19 @@ const Banner = ({theme}) => {
            <img src={theme === 'dark' ? DarkBannerImage : LightBannerImage} />
           <div className='banner_links'>
             <hr></hr>
-            <a href="https://www.instagram.com/its_a_rthi/"
+            <a href="#"
               target="_blank"
               rel="noreferrer"><InstagramIcon className='inst_icon' />
             </a>
-            <a href="https://github.com/ArthiGit18"
+            <a href="#"
               target="_blank"
               rel="noreferrer">
               <GitHubIcon className='git_icon' /></a>
-            <a href="https://www.linkedin.com/in/arthianbalagan/"
+            <a href="#"
               target="_blank"
               rel="noreferrer"><LinkedInIcon className='link_icon' />
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthianbalagan180@gmail.com"
+            <a href="#"
               className="social_link gmail"
               target="_blank">
               <EmailIcon className='mailb_icon' />

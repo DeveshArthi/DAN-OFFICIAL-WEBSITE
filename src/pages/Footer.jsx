@@ -7,7 +7,7 @@ export const Footer = () => {
                 <div className='footer_content'>
                     <img src={Image} alt="DAN TECHWORKS" />
                     <div className='footer_links'>
-                        <h2>DAN CONSULTANCY SERVICE</h2>
+                        <h2>DAN IT CONSULTANCY SERVICE</h2>
                         
                       <ul>
                         <li>Web Development</li>
@@ -17,7 +17,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    DAN@2024 All Rights Reserved
+                    DAN IT CONSULTANCY SERVICE@2026
                 </div>
             </div>
         </div>
