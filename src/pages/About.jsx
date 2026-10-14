@@ -13,10 +13,15 @@ const About = () => {
 
                 <div className='about_content'>
                     <div className='about_actions'>
-                        <h2>Bringing Ideas to Life Through Design & Technology.</h2>
-                        <p>DAN IT CONSULTANCY SERVICE is my freelance web development and design venture. I combine creativity with technical expertise to deliver solutions that exceed expectations.</p>
+                        <h2>Bringing Your Ideas to Life Across IT & Non-IT Projects</h2>
+                        <p>
+                            DAN IT CONSULTANCY SERVICE provides freelance services in web and
+                            software development, design, branding, and non-IT project support.
+                            We combine creativity, technical expertise, and a clear understanding
+                            of your goals to deliver solutions tailored to your business.
+                        </p>
                         <a
-                            href="https://drive.google.com/file/d/1Z9_BkPqZcsGszsvnXZrPoE0Sfac0B8az/preview"
+                            href="#"
                             className="talk_btn"
                             target="_blank"
                             rel="noreferrer"

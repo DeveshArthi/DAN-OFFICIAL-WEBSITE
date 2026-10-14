@@ -3,38 +3,41 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import DownloadIcon from '@mui/icons-material/Download';
 import DarkBannerImage from '../assets/ref/ter (1).png';
 import LightBannerImage from '../assets/ref/ter (2).png';
 
-const Banner = ({theme}) => {
+const Banner = ({ theme }) => {
   return (
     <div className='banner_bg'>
       <div className='container banner_wrapper'>
 
-        <div className='banner_content'>
-          <h3>FREE LAUNCH WEB DEVELOPER & DESIGNER 👋</h3>
-          <h1>website's and design <span>build around your</span>your Business</h1>
+        <div className="banner_content">
+          <h3>FREELANCE IT & NON-IT PROJECT SERVICES 👋</h3>
+
+          <h1>
+            Your Ideas. <span>Our Expertise.</span> Solutions for Your Business.
+          </h1>
+
           <p>
-            I design and develop responsive, user-friendly web interfaces that help businesses grow and users stay engaged.
-            Let's build something amazing together!
+            From websites and software development to branding, design, and
+            non-IT business projects, DAN IT Consultancy Service brings your
+            ideas to life. We deliver practical, tailored solutions that support
+            your goals and help your business grow.
           </p>
-          <div className='banner_actions'>
-            <a href="#contact" className="talk_btn">Start Your Project</a>
-            <a
-              href="#"
-              className="talk_btn"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <DownloadIcon />
-              Explore My Work
+
+          <div className="banner_actions">
+            <a href="#contact" className="talk_btn">
+              Start Your Project
+            </a>
+
+            <a href="#services" className="talk_btn">
+              Explore Our Services
             </a>
           </div>
         </div>
 
         <div className='banner_img'>
-           <img src={theme === 'dark' ? DarkBannerImage : LightBannerImage} />
+          <img src={theme === 'dark' ? DarkBannerImage : LightBannerImage} />
           <div className='banner_links'>
             <hr></hr>
             <a href="#"

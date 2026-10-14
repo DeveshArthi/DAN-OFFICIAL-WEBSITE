@@ -12,12 +12,12 @@ const cardContent = [
     },
     {
         image: image1,
-        title: 'Brand Identity',
+        title: 'Brand Identity & Logo Design',
         link: '/creation/brand-identity',
     },
     {
         image: image1,
-        title: 'Social Media Design',
+        title: 'Social Media & Marketing Design',
         link: '/creation/social-media-design',
     },
     {

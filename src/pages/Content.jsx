@@ -28,23 +28,25 @@ export const Content = () => {
         <section
             ref={sectionRef}
             className={`content_wrapper ${isVisible ? 'is-visible' : ''}`}
-            
+
         >
             <hr className='content_hr' />
             <div className='content_wrapper'>
 
-                <div className='container'>
-                    <div className='content1'>
+                <div className="container">
+                    <div className="content1">
                         <CodeIcon style={{ color: '#0075ce', fontSize: '2rem' }} />
-                        <p>Web Development</p>
+                        <p>Web & Software Development</p>
                     </div>
-                    <div className='content1'>
+
+                    <div className="content1">
                         <PaletteIcon style={{ color: '#ce000e', fontSize: '2rem' }} />
-                        <p>UI/UX Design</p>
+                        <p>Design & Branding</p>
                     </div>
-                    <div className='content1'>
+
+                    <div className="content1">
                         <BrushIcon style={{ color: '#00ce18', fontSize: '2rem' }} />
-                        <p>Branding</p>
+                        <p>Non-IT Project Services</p>
                     </div>
                 </div>
             </div>
